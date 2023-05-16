@@ -1,0 +1,717 @@
+@import url('https://fonts.googleapis.com/css?family=Brawler');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Brawler';
+  scroll-behavior: smooth;
+}
+
+h2 {
+  font-size: 2.6em;
+}
+
+/* NAVIGATION BAR DESIGN */
+#nav {
+  background-color: rgb(14, 13, 13);
+  display: flex;
+  position: fixed;
+  z-index: 1;
+}
+
+#left-nav {
+  width: 15vw;
+  display: flex;
+  align-items: center;
+  padding-left: 20px;
+}
+
+#left-nav img {
+  width: 20%;
+}
+
+#mid-nav {
+  width: 60vw;
+  display: flex;
+  /* justify-content: center; */
+  align-items: center;
+  gap: 40px;
+}
+
+#mid-nav a {
+  color: silver;
+  font-size: 0.9em;
+}
+
+#mid-nav a:hover {
+  color: mediumspringgreen;
+  text-shadow: 2px 5px 10px mediumspringgreen;
+}
+
+#mid-nav label {
+  color: aliceblue;
+  font-size: 1.8em;
+  display: none;
+}
+
+#mid-nav label:hover {
+  color: rgb(55, 10, 239);
+  cursor: pointer;
+}
+
+#right-nav {
+  width: 25vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-right: 20px;
+}
+
+#right-nav button {
+  padding: 15%;
+  border-radius: 2em;
+  background-color: mediumspringgreen;
+  color: black;
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+#right-nav button:hover {
+  border: 2px solid mediumspringgreen;
+  box-shadow: 0px 0px 9px 3px mediumspringgreen;
+  text-shadow: 0px 1px 3px rgb(98, 254, 194);
+  background-color: rgb(21, 21, 21);
+  color: mediumspringgreen;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+header {
+  /* background-image: url(./images/background/lamp.jpg);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: 100% 100%; */
+  background-color: black;
+  /* clip-path: polygon(0 0, 100% 0, 100% 100%, 50% 96%, 0 100%, 0% 50%); */
+}
+
+/* TOP HEADER DESIGN */
+#top-header {
+  /* background-color: rgb(16, 16, 16); */
+  width: 100%;
+  display: flex;
+  /* margin-bottom: 70px; */
+  /* padding: 40px 0; */
+  padding-top: 70px;
+  /* border: 2px solid aquamarine; */
+}
+
+#top-header-left {
+  width: 50%;
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+  align-items: center;
+}
+
+#top-header-left1 {
+  width: 70%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 20px;
+}
+
+#top-header-left1 h4 {
+  font-size: 1.2em;
+  color: mediumspringgreen;
+}
+
+#top-header-left1 h1 {
+  font-size: 2.9em;
+  color: whitesmoke;
+}
+
+#top-header-left1 p {
+  font-size: 1.1em;
+  color: whitesmoke;
+}
+
+#top-header-left1 button {
+  background-color: rgb(21, 21, 21);
+  padding: 1em;
+  border: 2px solid mediumspringgreen;
+  font-size: 1em;
+  font-weight: 600;
+  color: mediumspringgreen;
+}
+
+#top-header-left1 button:hover {
+  padding: 1em;
+  border: 2px solid transparent;
+  font-size: 1em;
+  font-weight: 600;
+  cursor: pointer;
+  color: black;
+  background-color: mediumspringgreen;
+  transition: 0.3s ease;
+}
+
+#top-header-right {
+  width: 50%;
+  display: flex;
+  justify-content: end;
+  /* background-color: black; */
+}
+
+#top-header-right img {
+  width: 100%;
+}
+
+/* DOWNN HEADER DESIGN */
+#down-header {
+  padding: 170px 0;
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+  align-items: center;
+}
+
+#down-header-left {
+  grid-column: 2/span 2;
+}
+
+#down-header-left img {
+  width: 100%;
+}
+
+#down-header-right {
+  grid-column: 5/span 3;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 20px;
+  color: aliceblue;
+}
+
+/* FIRST MAIN SECTION DESIGN */
+main {
+  /* background-image: linear-gradient(to left bottom, #092d5b, #005a90, #008bae, #00baaa, #0ae68a);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: 100% 100%; */
+  background-color: aliceblue;
+}
+
+#main1 {
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: 100% 100%;
+  padding: 60px 0;
+  /* border-top: 4px solid black; */
+  color: rgb(15, 16, 97);
+}
+
+#main1-top {
+  width: 100%;
+  text-align: center;
+}
+
+#main1-top h2 {
+  font-size: 2.6em;
+}
+
+#main1-top p {
+  font-size: 1.2em;
+}
+
+#main1-down {
+  padding: 0 7%;
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  gap: 40px
+}
+
+#webdev {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+#webdev img {
+  position: relative;
+  top: 25px;
+  width: 80px;
+}
+
+.hov {
+  padding: 35px 10px;
+  /* grid-column: 2/span 1;
+  grid-row: 1/span 1; */
+  background-color: aliceblue;
+  /* border: 1px solid black; */
+  color: black;
+  width: 90%;
+  height: 75%;
+  box-shadow: 0px 0px 5px 2px rgb(206, 203, 203);
+}
+
+.hov:hover {
+  width: 100%;
+  background-color: black;
+  color: white;
+  cursor: pointer;
+  transition: 0.5s ease;
+}
+
+#machine {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+#machine img {
+  position: relative;
+  top: 25px;
+  width: 80px;
+}
+
+#webdes {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+#webdes img {
+  position: relative;
+  top: 25px;
+  width: 80px;
+}
+
+#design3d {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+#design3d img {
+  position: relative;
+  top: 25px;
+  width: 80px;
+}
+
+/* skills section styling .contact*/
+section {
+  padding: 100px 0;
+}
+
+.max-width {
+  max-width: 1300px;
+  padding: 0 80px;
+  margin: auto;
+}
+
+.skills-content {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+}
+
+#skills {
+  margin: 120px 20px;
+}
+
+.title {
+  text-align: center;
+  margin-bottom: 60px;
+  color: rgb(15, 16, 97);
+}
+
+.skills .skills-content .column {
+  width: calc(50% - 30px);
+}
+
+.skills .skills-content .left .text {
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 30px;
+}
+
+.skills .skills-content .left p {
+  text-align: justify;
+}
+
+.skills .skills-content .left a {
+  display: inline-block;
+  background: crimson;
+  color: #fff;
+  font-size: 18px;
+  font-weight: 500;
+  padding: 8px 16px;
+  margin-top: 20px;
+  border-radius: 6px;
+  border: 2px solid crimson;
+  transition: all 0.3s ease;
+}
+
+.skills .skills-content .left a:hover {
+  color: crimson;
+  background: none;
+}
+
+.skills .skills-content .right .bars {
+  margin-bottom: 15px;
+}
+
+.skills .skills-content .right .info {
+  display: flex;
+  margin-bottom: 5px;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.skills .skills-content .right span {
+  font-weight: 500;
+  font-size: 18px;
+}
+
+.skills .skills-content .right .line {
+  height: 5px;
+  width: 100%;
+  background: lightgrey;
+  position: relative;
+}
+
+.skills .skills-content .right .line::before {
+  content: "";
+  position: absolute;
+  height: 100%;
+  left: 0;
+  top: 0;
+  background: crimson;
+}
+
+.skills-content .right .html::before {
+  width: 90%;
+}
+
+.skills-content .right .css::before {
+  width: 70%;
+}
+
+.skills-content .right .js::before {
+  width: 40%;
+}
+
+.skills-content .right .php::before {
+  width: 80%;
+}
+
+.skills-content .right .mysql::before {
+  width: 70%;
+}
+
+/* Education Div Design */
+#education {
+  text-align: center;
+  margin: 50px 10px;
+  color: rgb(15, 16, 97);
+}
+
+#edu-grid {
+  width: 100%;
+  height: 500px;
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr;
+  grid-template-rows: 1fr 2fr 2fr 2fr 2fr;
+  gap: 10px;
+  padding: 20px 40px;
+}
+
+#edu-grid div:nth-child(-n+3) {
+  background-color: black;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: aliceblue;
+}
+
+#edu-grid div:nth-child(n+4):nth-child(-n+15) {
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  color: black;
+}
+
+footer {
+  /* background-image: url(./images/background/hill.jpg); */
+  /* background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: 100% 100%; */
+  /* padding: 90px 190px; */
+  text-align: center;
+}
+
+#contact {
+  width: 100%;
+  /* height: 100vh; */
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  gap: 130px;
+  /* padding: 100px 60px; */
+  padding: 0px 130px;
+  padding-bottom: 130px;
+}
+
+#email input {
+  width: 100%;
+  height: 5vh;
+  border: 1px solid rgb(101, 101, 101);
+  border-radius: 10px;
+
+}
+
+#text textarea {
+  width: 100%;
+  height: 15vh;
+  border: 1px solid rgb(101, 101, 101);
+  margin: 5px 0;
+  border-radius: 10px;
+}
+
+#submit button {
+  width: 100%;
+  height: 45px;
+  border: 2px solid black;
+  border-radius: 2em;
+  background-color: mediumspringgreen;
+  color: black;
+  align-items: center;
+  font-size: 1.4em;
+  font-weight: 600;
+}
+
+#submit button:hover {
+  border: 2px solid mediumspringgreen;
+  box-shadow: 0px 0px 7px 3px inset mediumspringgreen;
+  text-shadow: 0px 1px 3px rgb(98, 254, 194);
+  background-color: rgb(21, 21, 21);
+  color: mediumspringgreen;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+#social-link {
+  width: 70%;
+  /* height: 100px; */
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  /* justify-content: center; */
+  align-items: center;
+  gap:15px;
+  border-right: 2px solid rgb(164, 50, 50);
+}
+
+#social-link a {
+
+  /* border-radius: 100px;
+  position: relative;
+  top: -24px;
+  margin-right: 20px; */
+  width:15%;
+  /* height: 25px; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  gap: 5px;
+}
+
+#social-link img {
+  width: 30px;
+  /* border-radius: 100px;
+  position: relative;
+  top: 5px;
+  margin-right: 10px; */
+  background-color: aliceblue;
+}
+
+#social-link a:hover {
+  transition: 0.2s ease;
+  color: mediumspringgreen;
+  /* background-color: mediumspringgreen; */
+  /* box-shadow: 0px 0px 5px 3px mediumspringgreen; */
+}
+
+@media screen and (max-width: 956px) {
+  #top-header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* background-color: #008bae; */
+  }
+
+  #top-header-right {
+    width: 70%;
+  }
+
+  #top-header-left {
+    margin-top: 30px;
+    width: 80%;
+  }
+
+  #down-header {
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    align-items: center;
+  }
+
+  #down-header-left {
+    grid-column: 2/span 3;
+    margin-right: 20px;
+  }
+
+  #down-header-right {
+    grid-column: 5/span 3;
+  }
+
+  #main1-down {
+    padding: 0 5em;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    column-gap: 30px;
+    row-gap: 0px;
+  }
+
+  #main1-top h2 {
+    font-size: 2em;
+  }
+
+  #main1-top p {
+    font-size: 1em;
+  }
+
+  #programing-text h2 {
+    font-size: 2em;
+  }
+
+  #programing-text p {
+    font-size: 1em;
+  }
+
+  #c-text,
+  #cpp-text,
+  #python-text,
+  #js-text,
+  #dsa-text h3 {
+    font-size: 1em;
+  }
+
+  h2 {
+    font-size: 2em;
+  }
+
+  #mid-nav a {
+    display: none;
+  }
+
+  #mid-nav label {
+    display: block;
+  }
+
+  #programing {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    align-items: center;
+    gap: 0px;
+    padding: 60px 0px;
+    /* color: aliceblue; */
+  }
+}
+
+@media screen and (max-width: 768px) {
+
+  #programing {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 5fr;
+    gap: 50px;
+    align-items: center;
+    padding: 60px 0px;
+  }
+
+  #progrming-bar {
+    grid-column: 1;
+    grid-row: 2/span 1;
+  }
+
+  #programing-text {
+    grid-column: 1;
+    grid-row: 1/span 1;
+    border: 0px;
+  }
+}
+
+@media screen and (max-width: 580px) {
+  #down-header {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  #down-header-left {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    grid-column: 1;
+  }
+
+  #down-header-right {
+    grid-column: 1;
+  }
+
+  #down-header-left img {
+    width: 50%;
+  }
+
+  #main1-down {
+    padding: 0 2em;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+
+  #education {
+    padding: 90px 5px;
+  }
+
+  #left-nav {
+    padding-left: 0px;
+  }
+
+  #mid-nav label {
+    padding-left: 10px;
+  }
+}
